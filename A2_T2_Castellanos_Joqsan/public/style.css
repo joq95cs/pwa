@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"); /*Se agregan los iconos de Bootstrp*/
+
+.menu {
+
+    color: white;
+    padding: 15px;
+}
+
+.menu .disabled {
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu a:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.ancho-libros {
+
+    width: 130px;
+    height: 190px;
+}
+
+.ancho-input {
+
+    width: 50px;
+}
+
+.color1 {
+
+    background-color: #CDFFFF;
+}
+
+.color2 {
+
+    background-color: #D2FFCD;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+
+    color: #007BFF;
+}
+
+.ancho-logo {
+
+    width: 650px;
+}

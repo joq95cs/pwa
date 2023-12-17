@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Se define el idioma de la pagina a espanol-->
+
+<head>
+    
+    <meta charset="UTF-8"> <!--Se usa el charset UTF-8 para mayor compatibilidad con navegadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+
+    <!--Se agrega Bootstrap para los estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css"> <!--Se enlaza una hoja de estilos externa-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script> <!--Se agrega JQuery-->
+    <script src="script-2.js"></script> <!--Se agrega el script a utilizar-->
+</head>
+
+<body>
+
+    <div class="container"> <!--Se define un contenedor de Bootstrap-->
+
+        <div class="row"> <!--Se define una linea-->
+
+            <div class="col-md-12 text-center"> <!--Se indica que el contenedor use todo el espacio y con alineacion al centro-->
+
+                <img src="logo.png" alt="" class="logo"> <!--Se agrega un logo y se le da una clase para controlar su tamano-->
+            </div>
+        </div>
+
+        <div class="row"> <!--Se define una linea-->
+
+            <div class="col-md-12 text-center"> <!--Se indica que el contenedor use todo el espacio y con alineacion al centro-->
+
+                <h2>Datos recibidos</h2>
+            </div>
+        </div>
+
+        <div class="row"> <!--Se define una linea-->
+
+            <div id="tabla-recibidos" class="col-md-12 p-md-5"> <!--Se indica que el contenedor use la mitad del espacio con un padding de 5-->
+
+                <table class="table table-bordered table-striped"> <!--Se define una tabla para el formulario con estilos Bootstrap-->
+
+                    <tr>
+
+                        <!--Se define el espaciopara el nombre recibido-->
+                        <th>Nombre recibido:</th>
+                        <td id="nombre-recibido"></td>
+                    </tr>
+
+                    <tr>
+
+                        <!--Se define el espacio para el apellido recibido-->
+                        <th>Apellido recibido:</th>
+                        <td id="apellido-recibido"></td>
+                    </tr>
+
+                    <tr>
+
+                        <!--Se define el espacio para el no. control recibido-->
+                        <th>No. control recibido:</th>
+                        <td id="control-recibido"></td>
+                    </tr>
+
+                    <tr>
+                        
+                        <!--Se define el espacio para la carrera recibido-->
+                        <th>Carrera recibida:</th>
+                        <td id="carrera-recibido"></td>
+                    </tr>
+
+                    <tr>
+
+                        <!--Se define el espacio para el semestre recibido-->
+                        <th>Semestre recibido:</th>
+                        <td id="semestre-recibido"></td>
+                    </tr>
+
+                    <tr>
+
+                        <!--Se define el espacio para el email recibido-->
+                        <th>Email recibido:</th>
+                        <td id="email-recibido"></td>
+                    </tr>
+
+                    <tr>
+
+                        <!--Se define el espacio para el telefono recibido-->
+                        <th>Tel&eacute;fono recibido:</th>
+                        <td id="telefono-recibido"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row"> <!--Se define una linea-->
+
+            <div class="col-md-12 text-center"> <!--Se indica que el contenedor use todo el espacio y centre su contenido-->
+
+                <footer> <!--Se define el pie de pagina-->
+
+                    <p>Elaborado por Joqsan Adalid Castellanos Alicea (A1903032) - 2023</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

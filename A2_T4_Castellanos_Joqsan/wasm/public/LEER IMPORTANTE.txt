@@ -1,0 +1,23 @@
+En la primera práctica se implementaron los temas de Fronted, Backend y APIS.
+Para el Frontend se implementó HTML, Bootstrap, JS y JQuery.
+Para el tema del Backend se desarrolló una API REST que conecta JS con PHP, 
+con el objetivo de hacer un CRUD con MySQL. Para las APIS, además de la API REST
+también se implementó una para la ubicación actual y otra para el clima
+en base a la ubicación.
+
+En la segunda práctica se implementó el tema de WebAssembly. Para ello,
+se elaboró una calculadora que permite hacer las operaciones usando código C.
+Se usó además una herramienta para generar los archivos de WebAssembly
+que permiten ejecutar el codigo escrito en C directamente en el navegador,
+como parte del Frontend.
+
+Las prácticas además fueron subidas a las siguientes URL:
+
+
+1. Backend, Frontend y APIS. https://rebrand.ly/joqsan-adalid-u41
+
+
+2. WebAssembly. https://rebrand.ly/joqsan-adalid-u42
+
+
+Att. Joqsan Adalid Castellanos Alicea (A1903032)

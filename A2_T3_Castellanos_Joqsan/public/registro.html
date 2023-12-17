@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--HOJAS DE ESTILO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+        .ancho-input {
+
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Se utiliza un formulario con estilos de Bootstrap para agregar nuevos usuarios-->
+    <div class="container">
+
+        <div class="row">
+
+            <header class="col-lg-12 text-center mb-2">
+
+                <h2>Registro</h2>
+                <hr>
+            </header>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12 text-center mb-2">
+
+                <!--Boton para ir al login-->
+                <button class="btn btn-primary" onclick="window.location.href='login.html'">Iniciar sesi&oacute;n</button>
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <div class="col-lg-6 mx-auto">
+
+                <!--Se un formulario con inputs para los daros del nuevo usuario-->
+                <table class="table table-bordered text-center">
+
+                    <tr>
+
+                        <th>Nombre</th>
+                        <td><input type="text" name="nombre" id="nombre" class="ancho-input"></td>
+                    </tr>
+
+                    <tr>
+
+                        <th>Apellido</th>
+                        <td><input type="text" name="apellido" id="apellido" class="ancho-input"></td>
+                    </tr>
+
+                    <tr>
+
+                        <th>G&eacute;nero</th>
+                        <td><select name="genero" id="genero" class="ancho-input">
+
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">Sin especificar</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+
+                        <th>Edad</th>
+                        <td><input type="number" name="edad" id="edad" min="0" max="100" value="18" class="ancho-input"></td>
+                    </tr>
+
+                    <tr>
+
+                        <th>Tel&eacute;fono</th>
+                        <td><input type="tel" name="telefono" id="telefono" class="ancho-input"></td>
+                    </tr>
+
+                    <tr>
+
+                        <th>Email</th>
+                        <td><input type="email" name="email" id="email" class="ancho-input"></td>
+                    </tr>
+
+                    <tr>
+
+                        <th>Contrase&ntilde;a</th>
+                        <td><input type="password" name="password" id="password" class="ancho-input"></td>
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="2"><button id="btn-registrarse" class="btn btn-success">Registrarse</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12 text-center mt-2">
+
+                <footer>
+
+                    <p>Elaborado por Joqsan Adalid Castellanos Alicea - 2023</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Se agrega Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database-compat.js"></script>
+    <!--Se agrega el script de configuracion para Firebase-->
+    <script src="firebase.js"></script>
+    <!--Se agrega el script de logica-->
+    <script src="script.js"></script>
+</body>
+</html>

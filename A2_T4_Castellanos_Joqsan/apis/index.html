@@ -1,0 +1,115 @@
+<!--Se implementa el uso del FRONTEND-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pel&iacute;culas</title>
+
+    <!--Se agrega Bootstrap para los estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--Como parte del FRONTEND se usa Bootstrap para los estilos de la pagina web-->
+    <div class="container"> <!--Se usa el sistema de contenedores y filas de Bootsrap-->
+
+        <div class="row">
+
+            <div class="header col-12 text-center mb-2"> <!--Se usan las columnas para definir el tamano y asegurar responsividad-->
+
+                <h2>Formulario de pel&iacute;culas</h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!--Se usa una tabla para crear el formulario con estilos de Bootstrap-->
+            <table class="table table-hover table-bordered col-12">
+
+                <!--Se definen los inputs-->
+                <tr>
+
+                    <th><label for="id-pelicula">ID</label></th>
+                    <td><input type="text" name="id-pelicula" id="id-pelicula" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <th><label for="nombre">Nombre</label></th>
+                    <td><input type="text" name="nombre" id="nombre" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <th><label for="director">Director</label></th>
+                    <td><input type="text" name="director" id="director" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <th><label for="estudio">Estudio</label></th>
+                    <td><input type="text" name="estudio" id="estudio" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <th><label for="agno">A&ntilde;o</label></th>
+                    <td><input type="number" name="agno" id="agno" min="0" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <th><label for="pais">Pa&iacute;s</label></th>
+                    <td><input type="text" name="pais" id="pais" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <th><label for="genero">G&eacute;nero</label></th>
+                    <td><input type="text" name="genero" id="genero" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <!--Se agregan los botones que se usaran para las tareas del CRUD-->
+                    <td colspan="2">
+
+                        <div class="text-center">
+
+                            <!--Se usan colores para los botones-->
+                            <button id="btn-registrar" class="btn btn-success">Registrar</button>&nbsp;
+                            <button id="btn-buscar" class="btn btn-primary">Buscar</button>&nbsp;
+                            <button id="btn-actualizar" class="btn btn-secondary">Actualizar</button>&nbsp;
+                            <button id="btn-eliminar" class="btn btn-danger">Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Para las apis de clima y ubicacion se usaran parrafos que seran modificados desde js-->
+        <div class="row">
+
+            <p id="ubicacion" class="col-12 text-center"></p>
+        </div>
+
+        <div class="row">
+
+            <p id="clima" class="col-12 text-center"></p>
+        </div>
+
+        <div class="row">
+
+            <footer class="col-12 text-center">Elaborado por Joqsan Adalid Castellanos Alicea - 2023</footer>
+        </div>
+    </div>
+
+    <!--Se agrega JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

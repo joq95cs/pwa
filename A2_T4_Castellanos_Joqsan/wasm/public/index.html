@@ -1,0 +1,98 @@
+<!--En esta parte se desarrolla el FRONTEND para la calculadora que usa Web Assembly
+    El objetivo de la calculadora es llamar un WASM que fue creado desde un codigo en C
+    Para ello se uso una herramienta llamada Emscripten que permite ejecutar codigo C en el navegador
+    Como resultado se genera un archivo wasm y un archivo html que seran usados por JS para los calculos
+    Gracias a esto, se puede ejecutar un codigo que originalmente esta escrito en C en el navegador
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASM</title>
+
+    <!--Se agrega Bootstrap para los estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+
+        button {
+
+            width: 100px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <header class="col-12 text-center mb-3">
+
+                <h2>Calculadora con Web Assembly</h2>
+            </header>
+        </div>
+
+        <div class="row">
+
+            <table class="table table-striped table-bordered text-center">
+
+                <tr>
+
+                    <td><input type="number" id="sumar-n1" class="form-control"></td>
+                    <th>+</th>
+                    <td><input type="number" id="sumar-n2" class="form-control"></td>
+                    <td><button class="btn btn-primary" id="btn-sumar">Sumar</button></td>
+                    <th>Resultado:</th>
+                    <td><input type="number" id="sumar-res" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <td><input type="number" id="restar-n1" class="form-control"></td>
+                    <th>-</th>
+                    <td><input type="number" id="restar-n2" class="form-control"></td>
+                    <td><button class="btn btn-success" id="btn-restar">Restar</button></td>
+                    <th>Resultado:</th>
+                    <td><input type="number" id="restar-res" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <td><input type="number" id="mult-n1" class="form-control"></td>
+                    <th>*</th>
+                    <td><input type="number" id="mult-n2" class="form-control"></td>
+                    <td><button class="btn btn-warning" id="btn-mult">Multiplicar</button></td>
+                    <th>Resultado:</th>
+                    <td><input type="number" id="mult-res" class="form-control"></td>
+                </tr>
+
+                <tr>
+
+                    <td><input type="number" id="div-n1" class="form-control"></td>
+                    <th>/</th>
+                    <td><input type="number" id="div-n2" class="form-control"></td>
+                    <td><button class="btn btn-info" id="btn-div">Dividir</button></td>
+                    <th>Resultado:</th>
+                    <td><input type="number" id="div-res" class="form-control"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row">
+
+            <footer class="col-12 text-center mt-3">
+
+                <p>Elaborado por Joqsan Adalid Castellanos Alicea - 2023</p>
+            </footer>
+        </div>
+    </div>
+
+    <!--Se importa el script de logica-->
+    <script src="script.js"></script>
+</body>
+</html>

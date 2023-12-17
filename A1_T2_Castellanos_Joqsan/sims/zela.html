@@ -1,0 +1,139 @@
+<!--Estudiante: Joqsan Adalid Castellanos Alicea-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zela de Edom</title>
+
+    <!--ZONA DE ESTILOS-->
+    <!--Se incluye el RESET CSS-->
+    <link rel="stylesheet" href="reset.css">
+    <!--Se incluye el CSS de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Se incluye el CSS de Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Se incluye el CSS de la fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Otros estilos a utilizar en la pagina-->
+    <style>
+
+        .fuente {
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .ancho-img {
+
+            width: 610px;
+        }
+
+        .ancho-logo {
+
+            width: 650px;
+        }
+
+        .alto-historia {
+
+            height: 470px;
+        }
+
+        @media (max-width: 700px) {
+            .alto-historia {
+
+                height: 320px; /* Altura reducida para pantallas más pequeñas */
+            }
+        }
+
+        /*Colores personalizados*/
+        .color-1 {
+
+            background-color: #E6DFF5;
+        }
+
+        .color-2 {
+
+            background-color: #D2FDC1;
+        }
+
+        /*Estilos para el texto*/
+        .scroll {
+
+            overflow: auto;
+        }
+
+        .justificado {
+
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Se usan clases de Bootstrap para darle estilos a la pagina-->
+    <div class="container">
+
+        <div class="row">
+
+            <figure class="col-lg-12 text-center">
+
+                <img src="../img/logo.png" alt="" class="ancho-logo img-fluid">
+            </figure>
+        </div>
+
+        <div class="row">
+
+            <header class="col-lg-12 text-center bg-primary">
+
+                <h2 class="text-white fuente">Conoce la historia de Zela de Edom</h2>
+            </header>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-8 color-2 alto-historia pt-2">
+
+                <figure class="text-center">
+
+                    <img src="../img/zela.png" alt="" class="ancho-img rounded img-fluid">
+                </figure>
+            </div>
+
+            <div class="col-lg-4 color-1 alto-historia scroll">
+
+                <!--Texto de la historia-->
+                <p class="mt-2 justificado fuente">Había una vez una mujer de una belleza impresionante llamada Zela de Edom. Su origen la llevó desde el lejano oriente hasta la vibrante ciudad de Newcrest. Desde el momento en que puso un pie en la ciudad, Zela se convirtió en el alma de las fiestas, la reina de la moda y la envidia de todas las mujeres. Su carisma y elegancia natural atraían a todos a su alrededor, y pronto se convirtió en el centro de atención de la alta sociedad de Newcrest.
+                    <br><br>Sin embargo, entre todos los admiradores que se agolpaban a su alrededor, hubo uno que destacó por encima de todos los demás. Se llamaba Dominic, un apuesto y adinerado caballero que quedó completamente deslumbrado por la belleza y la personalidad de Zela. A medida que pasaban más tiempo juntos, sus corazones se fueron entrelazando en una historia de amor que parecía sacada de un cuento de hadas.
+                    <br><br>Después de un corto pero apasionado cortejo, Dominic se arrodilló frente a Zela y le propuso matrimonio. La respuesta de Zela fue un emocionado "sí", y su boda fue un evento espectacular lleno de lujo y glamour. La pareja radiaba felicidad mientras intercambiaba sus votos en una ceremonia hermosa y emotiva.
+                    <br><br>A partir de ese día, Zela y Dominic vivieron una vida de ensueño juntos. Viajaron por todo el mundo, explorando culturas y lugares nuevos y exóticos. Desde las playas doradas de Bali hasta las majestuosas pirámides de Egipto, Zela y Dominic vivieron aventuras que muchos solo podían soñar.
+                    <br><br>A pesar de su vida lujosa y su estatus, Zela nunca perdió su amabilidad y su bondad. Siempre se mantuvo cercana a las personas y ayudó a aquellos que lo necesitaban. Su amor por Dominic solo crecía con el tiempo, y su relación seguía siendo tan apasionada como el primer día.
+                    <br><br>Zela siguió siendo amada y admirada, no solo por su belleza exterior, sino por la belleza de su corazón. Se convirtió en un faro de esperanza y bondad en el mundo de la alta sociedad, recordándoles a todos que la verdadera riqueza se encuentra en el amor y la generosidad. Zela y Dominic vivieron una vida juntos que fue la envidia de todos, pero lo más importante, vivieron una vida llena de amor y felicidad, donde la belleza interior brilló aún más que la exterior.
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12 text-center mt-2">
+
+                <!--Botones de navegacion-->
+                <a class="btn btn-success" href="mina.html"><i class="bi bi-arrow-left-circle"></i>&nbsp;Anterior</a>
+                &nbsp;
+                <a class="btn btn-success" href="../index.html"><i class="bi bi-house"></i>&nbsp;Home</a>
+                &nbsp;
+                <a class="btn btn-success" href="patricia.html">Siguiente&nbsp;<i class="bi bi-arrow-right-circle"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--ZONA DE SCRIPTS-->
+    <!--Se incluye JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--Se incluye Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!--Se incluye el JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
